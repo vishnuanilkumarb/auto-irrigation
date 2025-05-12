@@ -10,8 +10,11 @@ The amount of water needed can also be adjusted according the requirements of th
 
 This setup can be extended to larger fields.
 
-## Features
-
+> The system does the following:
+> * Gives the soil moisture value in the soil where 400-600 is wet and above 800 is dry.
+> *  If the soil moisture sensor detects the soil is dry during the watering period then it switches on the pump and the plants are watered. This is done to avoid excess watering of the plant in case precipitation occurs.
+> * It checks the moisture every 30 mins during the watering period.
+> * The timing is kept in real time using the RTC(Real Time Clock) module.  
 
 
 ## Hardware Requirements
