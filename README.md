@@ -26,6 +26,7 @@ This setup can be extended to larger fields.
 - DC Power Adapter
 - Buck to Buck Converter or Battery(To power the board and motors)
 - LCD Module
+- RTC Module
 - Relay Module
 - Diode , Transistor and 1k ohm resistor (if the relay doesn't have a module)
 - Jumper Wires
@@ -64,6 +65,20 @@ This setup can be extended to larger fields.
 | Negative Terminal IN | Positive of DC Adapter |
 | Negative Terminal OUT| Positive of Power Jack |
 
+### LCD Module 
+
+Please Refer to [this](https://howtomechatronics.com/tutorials/arduino/lcd-tutorial/) if it is without i2c module.
+
+If it is with an i2c module, then refer to [this](https://lastminuteengineers.com/i2c-lcd-arduino-tutorial/).
+
+### RTC Module
+
+| RTC | To |
+|-|-|
+| SCL | SCL of Arduino |
+| SDA | SDA of Arduino |
+| VCC | VCC of Arduino |
+| GND | GND of Arduino |
 
 ### Relay with Module
 
