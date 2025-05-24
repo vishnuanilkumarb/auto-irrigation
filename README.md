@@ -35,7 +35,8 @@ This setup can be extended to larger fields.
 
 ## Arduino Libraries Required
 
-
+- RTCLib
+- Adafruit Unified Sensor
 
 
 ## Pin Configurations
@@ -126,10 +127,9 @@ If it is with an i2c module, then refer to [this](https://lastminuteengineers.co
 | 2 | Arduino Pin 9 |
 
 
-## Setup & Installations
-
-
-
 ## Troubleshooting
 
-
+- Check that the connections are made properly.
+- No wires are exposed/ touching one another.
+- The Libraries are installed.
+- The battery in the RTC module works
