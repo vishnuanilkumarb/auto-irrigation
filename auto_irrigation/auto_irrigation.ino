@@ -2,7 +2,7 @@
 #include "RTClib.h"
 #include <Wire.h>
 
-//For Relay motor
+//For Valve
 #define RELAY_PIN 9
 
 
@@ -10,8 +10,8 @@
 #define sensorPower 7
 #define sensorPin A0
 
-//For Soil Sensor values
-//change according to the soil, check regularly
+/*For Soil Sensor values
+change according to the soil, check regularly*/
 #define soilWet 500
 #define soilDry 750
 
@@ -58,10 +58,9 @@ void loop() {
             digitalWrite(RELAY_PIN, HIGH);
             Serial.println("Status: Soil is too dry - time to water!");
             Serial.println("Pump is on!");
-            delay(30000); //for 30 seconds (change accordingly)
+            delay(180000);
             digitalWrite(RELAY_PIN, LOW);
             Serial.println("Pump is off!");
-            delay(5000); 
         } 
     }
 
